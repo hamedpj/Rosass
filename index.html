@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi niña linda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            text-align: center;
+            max-width: 100%;
+            width: 600px;
+        }
+        .name-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #d23669;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .special-message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d23669;
+            margin: 30px 0;
+            padding: 15px;
+            border: 2px dotted #ffb3c6;
+            border-radius: 10px;
+            background-color: #fff9fb;
+        }
+        .rose-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .rose {
+            margin: 10px;
+            transform-origin: center;
+            transition: transform 0.5s ease;
+        }
+        .rose:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .hearts {
+            color: #ff4081;
+            font-size: 22px;
+            margin: 0 5px;
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .rose {
+                width: 100px;
+                height: 100px;
+            }
+            .special-message {
+                font-size: 20px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .rose {
+                width: 80px;
+                height: 80px;
+            }
+            .special-message {
+                font-size: 18px;
+                padding: 8px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="name-card">
+            <h1>Rosas para ti</h1>
+            
+            <div class="rose-container">
+                <!-- Rosa 1 -->
+                <svg class="rose" width="120" height="120" viewBox="0 0 100 100">
+                    <!-- Tallo -->
+                    <path d="M50,100 Q48,75 50,60" stroke="#2e7d32" stroke-width="3" fill="none" />
+                    <!-- Hoja -->
+                    <path d="M50,80 C60,75 65,85 50,90" fill="#4caf50" />
+                    
+                    <!-- Pétalos -->
+                    <path d="M50,60 C30,45 30,25 50,35 C70,25 70,45 50,60" fill="#ff80ab" />
+                    <path d="M50,60 C40,35 50,15 60,35 C70,15 60,35 50,60" fill="#f50057" />
+                    <path d="M50,60 C35,50 35,30 50,40 C65,30 65,50 50,60" fill="#ff4081" />
+                    <path d="M50,60 C45,35 55,25 65,40 C75,25 65,50 50,60" fill="#f50057" />
+                </svg>
+                
+                <!-- Rosa 2 -->
+                <svg class="rose" width="120" height="120" viewBox="0 0 100 100">
+                    <!-- Tallo -->
+                    <path d="M50,100 Q52,75 50,60" stroke="#2e7d32" stroke-width="3" fill="none" />
+                    <!-- Hoja -->
+                    <path d="M50,85 C40,80 35,90 50,95" fill="#4caf50" />
+                    
+                    <!-- Pétalos -->
+                    <path d="M50,60 C30,45 30,25 50,35 C70,25 70,45 50,60" fill="#f8bbd0" />
+                    <path d="M50,60 C40,35 50,15 60,35 C70,15 60,35 50,60" fill="#ec407a" />
+                    <path d="M50,60 C35,50 35,30 50,40 C65,30 65,50 50,60" fill="#f48fb1" />
+                    <path d="M50,60 C45,35 55,25 65,40 C75,25 65,50 50,60" fill="#ec407a" />
+                </svg>
+                
+                <!-- Rosa 3 -->
+                <svg class="rose" width="120" height="120" viewBox="0 0 100 100">
+                    <!-- Tallo -->
+                    <path d="M50,100 Q48,75 50,60" stroke="#2e7d32" stroke-width="3" fill="none" />
+                    <!-- Hoja -->
+                    <path d="M50,80 C60,75 65,85 50,90" fill="#4caf50" />
+                    
+                    <!-- Pétalos -->
+                    <path d="M50,60 C30,45 30,25 50,35 C70,25 70,45 50,60" fill="#ff80ab" />
+                    <path d="M50,60 C40,35 50,15 60,35 C70,15 60,35 50,60" fill="#f50057" />
+                    <path d="M50,60 C35,50 35,30 50,40 C65,30 65,50 50,60" fill="#ff4081" />
+                    <path d="M50,60 C45,35 55,25 65,40 C75,25 65,50 50,60" fill="#f50057" />
+                </svg>
+            </div>
+            
+            <div class="special-message">
+                <span class="hearts">♥</span>
+                Para mi niña linda
+                <span class="hearts">♥</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animación simple para las rosas
+        const roses = document.querySelectorAll('.rose');
+        roses.forEach((rose, index) => {
+            setTimeout(() => {
+                rose.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    rose.style.transform = 'translateY(0)';
+                }, 300);
+            }, index * 200);
+        });
+    </script>
+</body>
+</html>
